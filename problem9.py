@@ -15,6 +15,8 @@
 # can try storing in sets to avoid repitition 
 # then check each for pythagorean triplet
 
+import time
+
 def check_pyth (a,b,c):
 
     if a**2 + b**2 == c**2:
@@ -23,6 +25,8 @@ def check_pyth (a,b,c):
         return False
     
 s = set()
+
+start = time.time()
 
 for a in range(1, 998):
 
@@ -40,3 +44,7 @@ for i in s:
         print('c:', i[2])
         print('product:', i[0]*i[1]*i[2])
         break
+
+end = time.time()
+
+print('time taken: ', end-start)
