@@ -19,7 +19,7 @@ for i in range(n,1,-1):
         break
 '''
 
-# overflow of stack in above so doesnt work ^
+# overflow of stack in above so it doesnt work ^
 
 # recursion depth exceeds in below so doesnt work:
 
