@@ -4,7 +4,10 @@
 
 # have to make it more efficient for it to work for 2 million
 
-end = 30
+# current complexity of erathosthenes seive: O(n^2)
+# required: O(nlog(log(n)))
+
+end = 10
 output = range(2,end)
 
 for i in range(2, end):
