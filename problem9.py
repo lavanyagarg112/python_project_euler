@@ -38,9 +38,7 @@ for a in range(1, 999, 2): # make this odd
                 if b % 4 == 0: # a is odd so cannot be divisible by 4 anyway
                     if a % 5 == 0 or b % 5 == 0 or c % 5 == 0:
                         s.add((a,b,c))
-
-print(s)
-
+                        
 for i in s:
 
     if check_pyth(i[0],i[1],i[2]):
