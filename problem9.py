@@ -28,13 +28,18 @@ s = set()
 
 start = time.time()
 
-for a in range(1, 998):
+for a in range(1, 999, 2): # make this odd
 
-    for b in range(1, 998):
+    for b in range(2, 999, 2): # make this even
 
         c = 1000 - (a + b)
-        if c in range(1, 998):
-            s.add((a,b,c))
+        if c in range(1, 999, 2): # make this odd
+            if a % 3 == 0 or b % 3 == 0:
+                if b % 4 == 0: # a is odd so cannot be divisible by 4 anyway
+                    if a % 5 == 0 or b % 5 == 0 or c % 5 == 0:
+                        s.add((a,b,c))
+
+print(s)
 
 for i in s:
 
