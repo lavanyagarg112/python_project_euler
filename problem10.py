@@ -7,7 +7,7 @@
 # current complexity of erathosthenes seive: O(n^2)
 # required: O(nlog(log(n)))
 
-'''end = 2000000
+end = 30
 output = range(2,end)
 
 j = 2
@@ -17,7 +17,7 @@ while j < end:
         output = list(output[0:start]) + list(filter(lambda x: x % j != 0, output[start:]))
     j += 1
 
-print(sum(output))'''
+print(sum(output))
 
 # recursion depth exceeded:
 # we are doing - 
